@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Slot Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎰 Slot Machine 🎰</h1>
+    <div class="credits">
+        Credits: <span id="credits">1000</span>
+    </div>
+    <div class="bet-options">
+        <button id="bet10" onclick="setBet(10)">Bet 10</button>
+        <button id="bet20" onclick="setBet(20)">Bet 20</button>
+        <button id="bet50" onclick="setBet(50)">Bet 50</button>
+    </div>
+    <div class="slot-machine">
+        <div class="reel" id="reel1">❓</div>
+        <div class="reel" id="reel2">❓</div>
+        <div class="reel" id="reel3">❓</div>
+    </div>
+    <button class="spin-btn" id="spinButton" onclick="spin()">🎲 Spin</button>
+    <button class="spin-btn" id="autoSpinButton" onclick="toggleAutoSpin()">🔄 Auto-Spin</button>
+    <h2 id="result"></h2>
+    <div class="payouts">
+        <h3>Winning Amounts</h3>
+        <ul>
+            <li>🍒 - 5 credits</li>
+            <li>🍋 - 10 credits</li>
+            <li>🔔 - 20 credits</li>
+            <li>⭐ - 40 credits</li>
+            <li>🍉 - 75 credits</li>
+            <li>7️⃣ - 150 credits (Jackpot)</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
